@@ -21,7 +21,7 @@ logging.basicConfig(
 
 # Load parameters
 logging.info("Loading parameters from params.yaml.")
-params = yaml.safe_load(open('./params.yaml', 'r'))['data_cleaning']
+params = yaml.safe_load(open('../params.yaml', 'r'))['data_cleaning']
 
 ENCODING_TECHNIQUE = params['ENCODING_TECHNIQUE']
 DEV_DATA_PATH = params['DEV_DATA_PATH']
