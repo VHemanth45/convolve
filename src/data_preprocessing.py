@@ -22,7 +22,6 @@ logging.basicConfig(
 # Load parameters
 logging.info("Loading parameters from params.yaml.")
 params = yaml.safe_load(open('../params.yaml', 'r'))['data_cleaning']
-
 ENCODING_TECHNIQUE = params['ENCODING_TECHNIQUE']
 DEV_DATA_PATH = params['DEV_DATA_PATH']
 VAL_DATA_PATH = params['VAL_DATA_PATH']
@@ -149,9 +148,9 @@ with mlflow.start_run():
 
         # train_df, test_df, val_df = encode(train_df, test_df, val_df)
 
-        train_df.to_csv('data/interim/train.csv', index=False)
-        test_df.to_csv('data/interim/test.csv', index=False)
-        val_df.to_csv('data/interim/validation.csv', index=False)
+        train_df.to_csv(r'C:\Users\vhema\Documents\Convolve\convolve_new\convolve\data\interim/train.csv', index=False)
+        test_df.to_csv(r'C:\Users\vhema\Documents\Convolve\convolve_new\convolve\data\interim/test.csv', index=False)
+        val_df.to_csv(r'C:\Users\vhema\Documents\Convolve\convolve_new\convolve\data\interim/validation.csv', index=False)
         
         logging.info("Cleaned and encoded data saved successfully.")
 

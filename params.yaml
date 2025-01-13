@@ -1,7 +1,6 @@
 data_cleaning:
-  DEV_DATA_PATH : 'data/raw/Dev_data_to_be_shared.csv'  # Path to the raw data
-  VAL_DATA_PATH : 'data/raw/validation_data_to_be_shared.csv'  # Path to the raw validation data
-
+  DEV_DATA_PATH : 'C:\Users\vhema\Documents\Convolve\convolve_new\convolve\data\raw\Dev_data_to_be_shared.csv'  # Path to the raw data
+  VAL_DATA_PATH : 'C:\Users\vhema\Documents\Convolve\convolve_new\convolve\data\raw\validation_data_to_be_shared.csv'  # Path to the raw validation data
   ENCODING_TECHNIQUE : 'target'  # Encoding technique to be used for categorical features  'target' or 'ordinal'
   
   NULL_PERCENTAGE : 0.25   # features with more than given missing values will be dropped
